@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brandomatic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1012">
+    <link rel="icon" type="./landing/image/vnd.microsoft.icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./landing/css/style.min.css?2" media="all"/>
+    <script src="./landing/js/01_jquery-2.0.3.min.js"></script>
+    <script src="./landing/js/all.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter36515500 = new Ya.Metrika({
+                        id: 36515500,
+                        webvisor: true,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                } catch (e) {
+                }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () {
+                        n.parentNode.insertBefore(s, n);
+                    };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+
+        $(function () {
+            var tooltip = $('[data-toggle="tooltip"]');
+            var clicked = false;
+            tooltip.tooltip({trigger: 'manual'}).tooltip('show');
+            tooltip.click(function() {
+                if(clicked) {
+                    setTimeout(function () {
+                        tooltip.tooltip({trigger: 'manual'}).tooltip('show');
+                    }, 400);
+                } else {
+                    tooltip.tooltip({trigger: 'manual'}).tooltip('hide');
+                }
+
+                clicked = !clicked;
+            });
+        });
+    </script>
+    <noscript>
+        <div><img src="//mc.yandex.ru/watch/36515500" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<a class="bg_register" href="./account/register"></a>
+<div class="wrap">
+    <header class="b-header">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <a href="/"><img src="./landing/images/content/logo.png" alt="Брендоматик"/></a>
+                </div>
+                <div class="span6 align-right">
+                    <ul class="b-header__links align-right">
+						<li><a class="login" href="./account/login">Войти</a></li>
+						<li><a class="register" href="./account/register">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="b-promo">
+        <div class="container">
+            <h1 class="b-promo__title">2 000 000 внимательных просмотров вашей рекламы в сутки</h1>
+            <h2 class="b-promo__subtitle">Единственная автоматическая рекламная биржа брендирования</h2>
+            <button class="b-promo__test js-reclametest" data-otext="Я понял, верните все как было">Что такое брендирование сайта?</button>
+            <div class="row">
+                <div class="span6">
+                    <div class="b-fitem icon3">
+                        <h3 class="b-fitem__title">Автоматический выкуп</h3>
+                        <p>Вам не нужно договариваться с сотнями вебмастеров и удовлетворять их, порой, чрезмерные требования - все уже готово и согласовано.</p>
+                    </div>
+                    <div class="b-fitem icon4">
+                        <h3 class="b-fitem__title">Оплата за показы</h3>
+                        <p>Простая и понятная система оценки стоимости, облегчает медиапланирование и упрощает взаиморасчеты.</p>
+                    </div>
+                    <div class="b-fitem icon5">
+                        <h3 class="b-fitem__title">Защита от накруток</h3>
+                        <p>Благодаря мощной системе анализа трафика и отзывчивым менеджерам, ваш бюджет надежно защищен. </p>
+                    </div>
+                    <div class="b-promo__reg">
+                        <a class="b-promo__regbtn" href="./account/register">Зарегистрироваться</a>
+                    </div>
+                </div>
+                <div class="span6">
+                    <div class="b-promo__image">
+                        <img src="./landing/images/content/monitor.png" alt="Example"/>
+                        <div style="position: absolute; left: 20px; top: 17px;">
+                            <iframe width="441" height="268" src="https://www.youtube.com/embed/uj3YYgWG76U?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-line b-howworks">
+        <div class="container">
+            <h2 class="b-line__title">Как это работает?</h2>
+            <div class="row">
+                <div class="span4">
+                    <div class="b-howworks__item">
+                        <div class="b-howworks__icon icon6"></div>
+                        <p class="b-howworks__text">Создаете рекламную кампанию и загружаете фоны</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-howworks__item">
+                        <div class="b-howworks__icon icon7"></div>
+                        <p class="b-howworks__text">Выбираете желаемую тематику и подходящие площадки</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-howworks__item">
+                        <div class="b-howworks__icon icon8"></div>
+                        <p class="b-howworks__text">Наблюдаете за ростом узнаваемости вашего бренда</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-line b-features">
+        <div class="container">
+            <h2 class="b-line__title">Что мы можем вам дать</h2>
+            <div class="row">
+                <div class="span4">
+                    <div class="b-features__item">
+                        <div class="b-features__icon icon10"></div>
+                        <h3 class="b-features__title">Запоминаемость</h3>
+                        <p>Брендирование сайта - это надежнейший способ установить в головах аудитории нужные вам нейронные связи.</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-features__item">
+                        <div class="b-features__icon icon11"></div>
+                        <h3 class="b-features__title">Живая аудитория</h3>
+                        <p>Каждый просмотр вашего бренда - это живой человек. Мы беспощадно фильтруем ботов и накрутчиков.</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-features__item">
+                        <div class="b-features__icon icon12"></div>
+                        <h3 class="b-features__title">Подробная статистика</h3>
+                        <p>У нас есть ответ на каждый потраченный рубль вашего бюджета.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span4">
+                    <div class="b-features__item">
+                        <div class="b-features__icon icon13"></div>
+                        <h3 class="b-features__title">Отзывчивая поддержка</h3>
+                        <p>Мы любим помогать людям по любым вопросам и проблемам.</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-features__item">
+                        <div class="b-features__icon icon9"></div>
+                        <h3 class="b-features__title">Технологичность</h3>
+                        <p>Все, что вам нужно сделать - это загрузить ваши материалы. Обо все остальном мы позаботимся.</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-features__item">
+                        <div class="b-features__icon icon14"></div>
+                        <h3 class="b-features__title">Бесперебойность</h3>
+                        <p>Никто не идеален, но мы уверенно приближаемся к этому благодаря мастерству наших разработчиков.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span4 offset4">
+                    <div class="b-features__item">
+                        <div style="margin-bottom: 20px"><img src="./landing/images/camera.png" alt=""/></div>
+                        <h3 class="b-features__title">Предпросмотр</h3>
+                        <p>Вы сможете посмотреть, как будет выглядеть ваша реклама на площадке без фактического запуска кампании.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="b-line__title">Вы - владелец сайтов?</h2>
+            <div class="row">
+                <div class="span4">
+                    <div class="b-features__item">
+                        <h3 class="b-features__title">Цена</h3>
+                        <p>Брендирование - один из самых дорогих форматов рекламы, поэтому ваша прибыль с сайтов возрастет многократно.</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-features__item">
+                        <h3 class="b-features__title">Бесплатный инструмент</h3>
+                        <p>Вы всегда можете загрузить собственный фон на площадку и таким образом откручивать брендирование от любых рекламодателей, даже не зарегистрированных у нас.</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-features__item">
+                        <h3 class="b-features__title">Доходность</h3>
+                        <p>Вы можете монетизировать площади своих сайтов, которые в большинстве случаев простаивают, не принося никакой прибыли.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span4">
+                    <div class="b-features__item">
+                        <h3 class="b-features__title">Простота</h3>
+                        <p>Настроить ваш сайт под нашу систему нужно будет всего один раз и в этом вам помогут наши специалисты.</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-features__item">
+                        <h3 class="b-features__title">Прозрачность</h3>
+                        <p>Выплаты осуществляются через систему WebMoney и выводить можно любую сумму, ограничений нет.</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="b-features__item">
+                        <h3 class="b-features__title">Корректность</h3>
+                        <p>Фоновые изображения, которые будут отображаться на вашем сайте, проходят тщательный контроль, как на наличие запрещенных материалов, так и с позиции качества.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-line b-line_color_red">
+        <div class="container">
+            <h2 class="b-line__title">Эти компании могут<br />подтвердить нашу эффективность</h2>
+            <div class="b-clients">
+                <a class="b-clients__item" href="http://postio.ru/" target="_blank"><img class="b-client__img" src="./landing/images/content/postio.png" alt="Postio"/></a>
+                <a class="b-clients__item" href="http://savensale.ru/" target="_blank"><img class="b-client__img" src="./landing/images/content/sns.png" alt="sns"/></a>
+                <a class="b-clients__item" href="http://rhinodesign.ru/" target="_blank"><img class="b-client__img" src="./landing/images/content/rhinodesign.png" alt="Rhino design"/></a>
+                <a class="b-clients__item" href="http://urbanrooms.ru/" target="_blank"><img class="b-client__img" src="./landing/images/content/urbanrooms.png" alt="Urban Rooms"/></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="b-line b-line_color_gray b-line_form">
+        <div class="container">
+            <form class="b-form" action="/account/register" method="get">
+                <div class="row">
+                    <div class="span6 offset3">
+                        <button type="submit" class="b-form__submit">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="b-line b-social align-right">
+        <div class="container">
+            <a class="b-social__item icon16" href="https://vk.com/brandomatic" target="_blank">ВКонтакте</a>
+            <a class="b-social__item icon15" href="https://www.facebook.com/brandomatic.ru" target="_blank">Facebook</a>
+            <a class="b-social__item icon17" href="https://www.youtube.com/channel/UCIrgBnJj-18l98mhqicGHPA" target="_blank">Youtube</a>
+        </div>
+    </div>
+
+    <footer class="b-footer">
+        <div class="container">
+            <div class="row">
+                <div class="span3">
+                    <ul class="b-footer__menu">
+                        <li><a href="./news">Новости</a></li>
+                        <li><a href="./support">Поддержка</a></li>
+                    </ul>
+                </div>
+                <div class="span3">
+                    <ul class="b-footer__menu">
+                        <li><a href="./requisites">Реквизиты</a></li>
+                        <li><a href="./rules">Правила</a></li>
+                    </ul>
+                </div>
+                <div class="span3">
+                    <ul class="b-footer__menu">
+                        <li><a href="./faq">FAQ</a></li>
+                        <li><a href="./agreement">Соглашение об обработке персональных данных</a></li>
+                    </ul>
+                </div>
+                <div class="span3">
+                    <div class="b-footer__phone">
+                        <a href="#" style="color: #D52355;">+7 (999) 999-99-99</a>
+                    </div>
+                    <div class="b-footer__email"><a href="#">Напишите нам</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+
+
+
+<!-- telegram.me/akkez -->
